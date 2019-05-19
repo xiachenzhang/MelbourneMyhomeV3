@@ -1,0 +1,231 @@
+﻿@model IEnumerable<MelbourneMH.Models.Ancestry>
+@{
+    Layout = null;
+    ViewBag.Title = "Ancestry";
+}
+<head>
+    <link href="~/Content/laynav.css" rel="stylesheet" />
+
+    <link href="~/Content/narbarside.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <link href="~/Content/Ancestry.css" rel="stylesheet" />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cardo:400,700,400italic|Open+Sans:400,800' rel='stylesheet' type='text/css'>
+    <link href="~/Content/language.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>@ViewBag.Title</title>
+</head>
+<body style="background-color:#fbffba;background-size:100% 100%">
+    <div id="menu" style="background-color:#e17266;z-index:9999">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu-inner">
+
+            <ul class="newstyle">
+                <li class="newstyle">
+                    <a class="link-3" href="~/Home/Home">Home</a>
+                </li>
+
+                <li class="newstyle"> <a class="link-3" href="~/Home/ChildDataSelect">Other Function</a></li>
+                <li class="newstyle"> <a class="link-3" href="~/Pop/LearningCenter">LearningCenter</a></li>
+                <li class="newstyle"> <a class="link-3" href="~/Culture/CultureOverview">Begining</a></li>
+
+            </ul>
+        </div><svg version="1.1" id="blob" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z" />
+        </svg>
+    </div>
+    <script src="~/Scripts/laynav.js"></script>
+
+    <div class="sections" style="margin-top:-40px">
+
+        <h1 style="font-size:64px;color:black">Ancestry</h1>
+        <div class="table-users">
+            <div class="header">2016</div>
+
+            <table cellspacing="0">
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Rank</th>
+                    <th>Amount</th>
+                    <th>Growth Speed</th>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <img src="~/Content/England.jpg" />
+                    </td>
+                    <td>
+                        @foreach (var item in Model)
+                        {
+                            if (item.Ancestry1 == "English" && item.Year == 2016)
+                            {
+                                @Html.DisplayFor(modelItem => item.Ancestry1)
+                            }
+
+                        }
+                                    </td>
+                    <td>1</td>
+                    <td>
+                        @foreach (var item in Model)
+                        {
+                            if (item.Ancestry1 == "English" && item.Year == 2016)
+                            {
+                                @Html.DisplayFor(modelItem => item.Number)
+                            }
+
+                        }
+                                    </td>
+                    <td style="text-align:center">
+                        <img src="~/Content/rocket.png" />Rocket
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="~/Content/Australia.png" />
+                    </td>
+                    <td>
+                        @foreach (var item in Model)
+                        {
+                            if (item.Ancestry1 == "Australian" && item.Year == 2016)
+                            {
+                                @Html.DisplayFor(modelItem => item.Ancestry1)
+                            }
+
+                        }
+                                    </td>
+                    <td>2</td>
+                    <td>
+                        @foreach (var item in Model)
+                        {
+                            if (item.Ancestry1 == "Australian" && item.Year == 2016)
+                            {
+                                @Html.DisplayFor(modelItem => item.Number)
+                            }
+
+                        }
+                                    </td>
+                    <td style="text-align:center">
+                        <img src="~/Content/Bicycle.jpg" />Bicycle
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="~/Content/Irish.jpg" />
+                    </td>
+                    <td>
+                        @foreach (var item in Model)
+                        {
+                            if (item.Ancestry1 == "Irish" && item.Year == 2016)
+                            {
+                                @Html.DisplayFor(modelItem => item.Ancestry1)
+                            }
+
+                        }
+                                    </td>
+                    <td>3</td>
+                    <td>
+                        @foreach (var item in Model)
+                        {
+                            if (item.Ancestry1 == "Irish" && item.Year == 2016)
+                            {
+                                @Html.DisplayFor(modelItem => item.Number)
+                            }
+
+                        }
+                                    </td>
+                    <td style="text-align:center">
+                        <img src="~/Content/Walking.jpg" />Walking
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="~/Content/Scotland.png" />
+                    </td>
+                    <td>
+                        @foreach (var item in Model)
+                        {
+                            if (item.Ancestry1 == "Scottish" && item.Year == 2016)
+                            {
+                                @Html.DisplayFor(modelItem => item.Ancestry1)
+                            }
+
+                        }
+                                    </td>
+                    <td>4</td>
+                    <td>
+                        @foreach (var item in Model)
+                        {
+                            if (item.Ancestry1 == "Scottish" && item.Year == 2016)
+                            {
+                                @Html.DisplayFor(modelItem => item.Number)
+                            }
+
+                        }
+                                    </td>
+                    <td style="text-align:center">
+                        <img src="~/Content/Plane.png" />Airplane
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                        <img src="~/Content/China.png" />
+                    </td>
+                    <td>
+                        @foreach (var item in Model)
+                        {
+                            if (item.Ancestry1 == "Chinese" && item.Year == 2016)
+                            {
+                                @Html.DisplayFor(modelItem => item.Ancestry1)
+                            }
+
+                        }
+                                    </td>
+                    <td>5</td>
+                    <td>
+                        @foreach (var item in Model)
+                        {
+                            if (item.Ancestry1 == "Chinese" && item.Year == 2016)
+                            {
+                                @Html.DisplayFor(modelItem => item.Number)
+                            }
+
+                        }
+                                    </td>
+                    <td style="text-align:center">
+                        <img src="~/Content/Car.png" />Car
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+</body>

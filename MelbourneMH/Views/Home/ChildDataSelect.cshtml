@@ -1,0 +1,68 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "ChildDataSelect";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/childdata.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+
+    <title></title>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Courgette', cursive;">Start your journey!</h1>
+
+
+        <input type="radio" name="section" id="section1" checked />
+        <section>
+            <a href="~/Pop/LearningCenter">
+                <img src="~/Content/Learning.png" />
+            </a>
+            <h2 style="color:#ffd800">Learning</h2>
+            <p>Start your learning journey here!</p>
+            
+        </section>
+
+        <input type="radio" name="section" id="section2" />
+        <section>
+
+            <a href="~/Quiz/QuizCenter">
+
+                <img src="~/Content/quiz.png" />
+            </a>
+                <h2 style="color:#28bc00">Quiz</h2>
+                <p>
+                    Let's try to answer the interesting quiz!
+                </p>
+        </section>
+
+        <input type="radio" name="section" id="section3" />
+        <section>
+
+            <a href="~/Game/GameCenter">
+
+                <img src="~/Content/game.png" />
+            </a>
+                <h2 style="color:#0e0bb7">Game</h2>
+                <p>Here are some lovely game for you to enjoy!</p>
+        </section>
+
+      
+
+        <nav>
+            <a  href="~/home/home"><label>Home</label></a>
+            <label for="section1">Learning</label>
+            <label for="section2">Quiz</label>
+            <label for="section3">Game</label>
+       
+        </nav>
+    </header>
+</body>
+</html>

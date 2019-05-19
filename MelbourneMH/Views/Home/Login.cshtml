@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/login.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="overflow:hidden">
+    <div id="container" style="text-align:center;margin-top:10%">
+        <div id="message" style="font-size:48px;font-family: 'Courgette', cursive;">
+            Please Login
+        </div>
+        <br />
+        <br />
+        <input id="username" type="text" placeholder="Username" />
+        <input id="password" type="password" placeholder="Password" />
+        <input type="button"
+               value="Login" placeholder="Login" onClick="getUsernameAndPassword()">
+    </div>
+
+    <center><div id="message" style="font-size:36px;font-family: 'Courgette', cursive;margin-top:10vh">
+        Welcome to Melbourne Myhome!
+    </div></center>
+    <script src="~/Scripts/login.js"></script>
+
+</body>
+</html>

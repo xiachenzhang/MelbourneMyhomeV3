@@ -1,0 +1,422 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Bird";
+}
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Lobster" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="~/Content/NARVIGATION.css" rel="stylesheet" />
+    <meta name="viewport" content="initial-scale=1.0">
+    <link href="~/Content/QuizCenter.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <link href="~/Content/popgame.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Merienda" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="~/Content/environmentcenter.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link href="~/Content/buttongo.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link href="~/Content/gallery.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
+</head>
+<body style="overflow-x:hidden">
+    <nav class="navbar navbar-default navbar-inverse" style="font-family: 'Merienda', cursive;background-color:#333">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Melbourne Myhome</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="~/Content/title.png" style="margin-top:2vh;margin-left:5vh" />
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav " style="margin-top:6px;margin-left:64px">
+                    <li><a href="~/Home/Home"><img src="~/Content/homeicon.png" />Home <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img src="~/Content/learningicon.png" />Learning <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Pop/LearningCenter"><i class="fa fa-book" aria-hidden="true"></i>Learning Center</a></li>
+                            <li><a href="~/Pop/PopOverview"><i class="fa fa-user" aria-hidden="true"></i>Population</a></li>
+                            <li><a href="~/Culture/CulOverview"><i class="fa fa-globe" aria-hidden="true"></i>Culture</a></li>
+
+                            <li><a href="~/Pop/Environment"><i class="fa fa-tree" aria-hidden="true"></i>Environment</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="~/Content/quizicon.png" />Quiz <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Quiz/QuizCenter"><i class="fa fa-file-text-o" aria-hidden="true"></i>Quiz Center</a></li>
+                            <li><a href="~/Quiz/QuizPop"><i class="fa fa-female" aria-hidden="true"></i>Population Quiz</a></li>
+                            <li><a href="~/Quiz/QuizCul"><i class="fa fa-flag" aria-hidden="true"></i>Culture Quiz</a></li>
+
+                            <li><a href="~/Quiz/QuizEnv"><i class="fa fa-bolt" aria-hidden="true"></i>Environment Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="~/Content/gameicon.png" />Game <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Game/GameCenter"><i class="fa fa-gamepad" aria-hidden="true"></i>Game Center</a></li>
+                            <li><a href="~/Game/MemoryGame"><i class="fa fa-github-alt" aria-hidden="true"></i>Memory Game</a></li>
+                            <li><a href="~/Game/Tangram"><i class="fa fa-hand-o-up" aria-hidden="true"></i>Tangram Game</a></li>
+                            <li><a href="~/Game/Capital"><i class="fa fa-check-square-o" aria-hidden="true"></i>Answer Game</a></li>
+                            <li><a href="~/Game/RecycleGame"><i class="fa fa-recycle" aria-hidden="true"></i>Recycle Game</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+        <center>
+            <h1 style="font-family: 'Merienda', cursive;">Environment Theme</h1>
+
+        </center>
+
+    </div>
+
+    <center>
+
+        <img src="~/Content/lovebird.png" />
+        <h2 style="font-family: 'Merienda', cursive;margin-top:10vh">Native Birds around Melbourne</h2>
+        <p style="font-family: 'Merienda', cursive;">Click it to check the detail.</p>
+    </center>
+
+
+
+    <div class="wrapper">
+        <div class="wrapper_inner">
+            <!-- Gallery -->
+            <section class="gallery">
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="1">
+
+                            <span>
+
+                                <img src="~/Content/1.Australian magpie_1.jpg" />
+                                <h2>No.1</h2><h3>Australian magpie</h3>
+                                <p>
+                                    
+                                </p>
+
+                            </span>
+                        </a>
+
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="1" class="gallery_item_full">
+                        <div class="box">
+                            <h3 style="font-size:48px">Australian magpie</h3>
+                            <img src="~/Content/b1.jpg" />
+
+
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Dacelo novaeguineae</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Conservation status:&nbsp;Least Concern (Population stable)  </h3><br />
+                                           <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Mass:&nbsp;300g(Adult) </h3><br />
+                             <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">
+                              Rank:&nbsp;
+                              Species
+                              </h3><br />
+                                   <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Higher classification:&nbsp;Kookaburra</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="2">
+                            <span>
+
+
+                                <img src="~/Content/2.Australian white ibis_1.jpg" />
+                                <h2>No.2</h2><h3>Australian white ibis</h3>
+                                <p>
+                                    
+                                </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="2" class="gallery_item_full">
+                        <div class="box">
+
+
+
+                            <h3 style="font-size:48px">Australian white ibis</h3>
+                            <img src="~/Content/b2.jpg" />
+
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Threskiornis moluccus</h3><br />
+                              <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Class:&nbsp;Aves</h3><br />
+                             <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Family:&nbsp;Threskiornithidae</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">
+                                Rank:&nbsp;
+                                Species
+                            </h3><br />
+                                 <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Higher classification:&nbsp;Threskiornis</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="3">
+                            <span>
+
+                                <img src="~/Content/3.Laughing kookaburra_1.jpg" />
+                                <h2>No.3</h2><h3>Laughing kookaburra</h3>
+                                <p>
+                                 
+                                </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="3" class="gallery_item_full">
+                        <div class="box">
+
+                            <h3 style="font-size:48px">Laughing kookaburra</h3>
+                            <img src="~/Content/b3.jpg" />
+
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Dacelo novaeguineae</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Mass:&nbsp;300g</h3><br />
+                                                                                                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Conservation status:&nbsp;Least Concern (Population stable)</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">
+                                Rank:&nbsp;
+                                Species
+                            </h3><br />
+                                 <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Higher classification:&nbsp;Kookaburra</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="4">
+                            <span>
+
+                                <img src="~/Content/4.Tawny frogmouth_1.jpg" />
+                                <h2>No.4</h2><h3>Tawny  <br />frogmouth</h3>
+                                <p>
+                                    
+                                </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="4" class="gallery_item_full">
+                        <div class="box">
+                            <h3 style="font-size:48px">Tawny frogmouth</h3>
+                            <img src="~/Content/b4.jpg" />
+
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Podargus strigoides</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Class:&nbsp;Aves</h3><br />
+                                                                                                             <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Family:&nbsp;Podargidae</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">
+                                Rank:&nbsp;
+                                Species
+                            </h3><br />
+                                 <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Higher classification:&nbsp;Podargus</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="5">
+
+
+                            <img src="~/Content/5.Superb fairywren_1.jpg" />
+                            <h2>No.5</h2><h3>Superb  <br />fairywren</h3>
+                            <p>
+                                
+                            </p>
+
+</span>
+                        </a>
+
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="5" class="gallery_item_full">
+                        <div class="box">
+                            <h3 style="font-size:48px">Superb fairywren</h3>
+                            <img src="~/Content/b5.jpg" />
+
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Malurus cyaneus</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Mass:&nbsp;10g(Adult)</h3><br />
+                             <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Family:&nbsp;Maluridae</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">
+                                Rank:&nbsp;
+                                Species
+                            </h3><br />
+                                 <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Higher classification:&nbsp;Fairywrens</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="6">
+                            <span>
+                                <img src="~/Content/6.Rainbow lorikeet_1.jpg" />
+                                <h2>No.6</h2><h3>Rainbow  <br />lorikeet</h3>
+                                              <p>
+                                                  
+                                              </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="6" class="gallery_item_full">
+                        <div class="box">
+                            <h3 style="font-size:48px">Rainbow lorikeet</h3>
+                            <img src="~/Content/b6.jpg" />
+
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Trichoglossus moluccanus</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Class:&nbsp;Aves</h3><br />
+                                                                                                             <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Family:&nbsp;Psittaculidae</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">
+                                Rank:&nbsp;
+                                Species
+                            </h3><br />
+                                 <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Higher classification:&nbsp;Trichoglossus</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="7">
+                            <span>
+                                <img src="~/Content/7.Willy wagtail_1.jpg" />
+                                <h2>No.7</h2><h3>Willy <br />wagtail</h3>
+                                                                                 <p>
+                                                                                 </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="7" class="gallery_item_full">
+                        <div class="box">
+
+                            <h3 style="font-size:48px">Willy wagtail</h3>
+                            <img src="~/Content/b7.jpg" />
+
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Rhipidura leucophrys</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Class:&nbsp;Aves</h3><br />
+                           <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Family:&nbsp;Rhipiduridae</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">
+                                Rank:&nbsp;
+                                Species
+                            </h3><br />
+                                 <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Higher classification:&nbsp;Fantails</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="8">
+                            <span>
+
+                                <img src="~/Content/8.Wedge-tailed eagle_1.jpg" />
+                                <h2>No.8</h2><h3>Wedge-tailed eagle</h3>
+                                <p>
+                                 
+                                </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="8" class="gallery_item_full">
+                        <div class="box">
+
+                            <h3 style="font-size:48px">Wedge-tailed eagle</h3>
+                            <img src="~/Content/b8.jpg" />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Aquila audax</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Class:&nbsp;Aves</h3><br />
+                            <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Mass:&nbsp;3.5kg(Adult)</h3><br />
+                                                                                                                    <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">
+                                                                                                                        Order:&nbsp;
+                                                                                                                        Accipitriformes
+                                                                                                                    </h3><br />
+                                                                                                                         <h3 style="color:#5363d0;font-family: 'Merienda', cursive;">Conservation status:&nbsp;Least Concern (Population increasing)</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <!-- Gallery  item -->
+
+            </section>
+        </div>
+        <a href="~/Pop/Environment" class="button" style="float:left;margin-top:10vh">Previous</a>
+        <a href="~/Environment/Animal" class="button" style="float:right;margin-right:30vh;margin-top:10vh">Next</a>
+    </div>
+
+
+
+
+
+    <script src="~/Scripts/gallery.js"></script>
+</body>

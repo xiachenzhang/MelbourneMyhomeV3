@@ -1,0 +1,95 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Dosis:700|PT+Sans+Caption);
+
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: sandybrown;
+}
+
+.container {
+}
+
+/*
+	header
+*/
+header, #choose {
+    text-align: center;
+}
+/*
+	#box
+*/
+#box {
+    width: 205px;
+    margin: 0px auto;
+    padding-top: 0px;
+    text-align: center;
+}
+
+    #box .col-xs-12 {
+        padding-bottom: 0px;
+    }
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+}
+
+.img-circle {
+    border-radius: 50%;
+    height: 225px;
+}
+/*
+	blockquote
+*/
+blockquote {
+    text-align: center;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: white;
+}
+
+    blockquote p {
+        padding-bottom: 3vh;
+    }
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+/*
+	choose
+*/
+#choose {
+    margin: 3vh 0vh;
+    text-align: center;
+}
+
+.btn-default:hover {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+
+/*
+	for responsive design
+*/
+@media (min-width:768px) {
+    #box {
+        width: 701px;
+        margin: 0px auto;
+        padding-top: 3vh;
+    }
+
+        #box .col-xs-12 {
+            padding-bottom: 5vh;
+        }
+
+    blockquote {
+        width: 701px !important;
+        margin: 0px auto !important;
+        font-size: 23px;
+    }
+}

@@ -1,0 +1,28 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+/* Sections */
+
+section {
+    
+    height: 1000px;
+    text-align: center;
+}
+
+    section:nth-child(even) {
+        
+    }
+
+    section:nth-child(odd) {
+        
+    }
+
+.sections section:first-child {
+    
+}
+
+section.active {
+}
+
+

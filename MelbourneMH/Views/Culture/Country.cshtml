@@ -1,0 +1,597 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Country";
+}
+<head>
+
+    <link href="~/Content/buttongo.css" rel="stylesheet" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Merienda" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/NARVIGATION.css" rel="stylesheet" />
+    <meta name="viewport" content="initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="ico/favicon-32.png" />
+    <!-- Icon For iOS 2.0+ and Android 2.1+ -->
+    <link rel="apple-touch-icon-precomposed" href="ico/favicon-152.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <link href="~/Content/Country.css" rel="stylesheet" />
+
+    <title>@ViewBag.Title</title>
+</head>
+<body style="background-color:#fbffba;background-size:100% 100%">
+    <nav class="navbar navbar-default navbar-inverse" style="font-family: 'Merienda', cursive;background-color:#333">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Melbourne Myhome</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="~/Content/title.png" style="margin-top:2vh;margin-left:5vh" />
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav " style="margin-top:6px;margin-left:64px">
+                    <li><a href="~/Home/Home"><img src="~/Content/homeicon.png" />Home <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img src="~/Content/learningicon.png" />Learning <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Pop/LearningCenter"><i class="fa fa-book" aria-hidden="true"></i>Learning Center</a></li>
+                            <li><a href="~/Pop/PopOverview"><i class="fa fa-user" aria-hidden="true"></i>Population</a></li>
+                            <li><a href="~/Culture/CulOverview"><i class="fa fa-globe" aria-hidden="true"></i>Culture</a></li>
+
+                            <li><a href="~/Pop/Environment"><i class="fa fa-tree" aria-hidden="true"></i>Environment</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="~/Content/quizicon.png" />Quiz <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Quiz/QuizCenter"><i class="fa fa-file-text-o" aria-hidden="true"></i>Quiz Center</a></li>
+                            <li><a href="~/Quiz/QuizPop"><i class="fa fa-female" aria-hidden="true"></i>Population Quiz</a></li>
+                            <li><a href="~/Quiz/QuizCul"><i class="fa fa-flag" aria-hidden="true"></i>Culture Quiz</a></li>
+
+                            <li><a href="~/Quiz/QuizEnv"><i class="fa fa-snowflake-o" aria-hidden="true"></i>Environment Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="~/Content/gameicon.png" />Game <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Game/GameCenter"><i class="fa fa-gamepad" aria-hidden="true"></i>Game Center</a></li>
+                            <li><a href="~/Game/MemoryGame"><i class="fa fa-github-alt" aria-hidden="true"></i>Memory Game</a></li>
+                            <li><a href="~/Game/Tangram"><i class="fa fa-hand-o-up" aria-hidden="true"></i>Tangram Game</a></li>
+                            <li><a href="~/Game/Capital"><i class="fa fa-check-square-o" aria-hidden="true"></i>Answer Game</a></li>
+                            <li><a href="~/Game/RecycleGame"><i class="fa fa-recycle" aria-hidden="true"></i>Recycle Game</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+
+        <h1 class="text-center text-muted" style="color:black;font-family: 'Rancho', cursive;">
+            China
+            <img src="~/Content/chian1.png" />
+        </h1>
+
+        <div class="row" style="margin-top:10vh">
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/panda-151605_1280.png" />
+                    <div class="mask">
+                        <h4 class="text-center">Panda</h4>
+                        <p>Mammals, China's national treasure, very cute!</p>
+
+                    </div>
+                </div><h4 class="text-center" style="color:black">Panda</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+                    <img src="~/Content/food-3224035_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Noodles</h4>
+                        <p>The raw material is wheat, very delicious!</p>
+
+                    </div>
+                </div><h4 class="text-center" style="color:black">Noodles</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+                    <img src="~/Content/china-2097078_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">The Great Wall</h4>
+                        <p>Ancient Chinese landmarks used to resist invasion by foreign enemies.</p>
+
+                    </div>
+                </div><h4 class="text-center" style="color:black">The Great Wall</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+                    <img src="~/Content/dragon-1085225_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Dragon</h4>
+                        <p>The legendary gods and animals, with horns, scales, claws, and whiskers, can enter the sky and flood the clouds.</p>
+
+                    </div>
+                </div><h4 class="text-center" style="color:black">Dragon</h4>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+                    <img src="~/Content/forbidden-city-186047_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Forbidden City</h4>
+                        <p>The Forbidden City (Chinese: 故宫; pinyin: Gùgōng) is a palace complex in central Beijing, China.</p>
+
+                    </div>
+                </div><h4 class="text-center" style="color:black">Forbidden City</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+                    <img src="~/Content/kudu-antelope-596804_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Antelope</h4>
+                        <p>An antelope is a member of a number of even-toed ungulate species indigenous to various regions.</p>
+
+                    </div>
+                </div><h4 class="text-center" style="color:black">Antelope</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+                    <img src="~/Content/shanghai-bund-night-1213148_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Pearl of the Orient</h4>
+                        <p>Oriental Pearl Tower, a radio and TV tower in Shanghai, China.</p>
+
+                    </div>
+                </div><h4 class="text-center" style="color:black">
+                    Pearl of the Orient
+                </h4>
+
+            </div>
+            <!-- Hover-Fall Effect-->
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+                    <img src="~/Content/dumpling-3765243_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Dumplings</h4>
+                        <p>Dumpling is a broad classification for a dish that consists of pieces of dough (made from a variety of starch sources) wrapped around a filling or of dough with no filling. </p>
+
+                    </div>
+                </div><h4 class="text-center" style="color:black">Dumplings</h4>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1 class="text-center text-muted" style="margin-top:10vh;color:black;font-family: 'Rancho', cursive;">Australia<img src="~/Content/Australia.png" /></h1>
+        <div class="row" style="margin-top:10vh">
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+
+                    <img src="~/Content/koala-310188_1280.png" />
+                    <div class="mask">
+                        <h4 class="text-center">Koala</h4>
+                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+
+                    </div>
+                </div><h4 class="text-center">Koala</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/animal-2024310_1280.png" />
+                    <div class="mask">
+                        <h4 class="text-center">Kangaroo</h4>
+                        <p>The koala (Phascolarctos cinereus, or, inaccurately, koala bear) is an arboreal herbivorous marsupial native to Australia.</p>
+
+                    </div>
+                </div><h4 class="text-center">Kangaroo</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/australia-2365004_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Tasmanian Devil</h4>
+                        <p>he Tasmanian devil (Sarcophilus harrisii) is a carnivorous marsupial of the family Dasyuridae.</p>
+
+                    </div>
+                </div><h4 class="text-center">Tasmanian Devil</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/vegemite-232957_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">
+                            Vegemite
+                        </h4>
+                        <p>Vegemite is a thick, black Australian food spread made from leftover brewers' yeast extract with various vegetable and spice additives. </p>
+
+                    </div>
+                </div><h4 class="text-center">
+                    Vegemite
+                </h4>
+
+            </div>
+        </div>
+        <div class="row" style="margin-top:10vh">
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/animal-2244718_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Wombat</h4>
+                        <p>a burrowing plant-eating Australian marsupial which resembles a small bear with short legs.</p>
+
+                    </div>
+                </div><h4 class="text-center">Wombat</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/australia-3392453_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Bay of Fires</h4>
+                        <p>The slice of coastal heaven that is the Bay of Fires stretches over 50 kilometres from Binalong Bay in the south to Eddystone Point in the north.</p>
+
+                    </div>
+                </div><h4 class="text-center">Bay of Fires</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/ocean-140633_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">The great ocean road</h4>
+                        <p>The Great Ocean Road starts at Torquay and travels 244 kilometres westward to finish at Allansford near Warrnambool, the largest city along the road. </p>
+
+                    </div>
+                </div><h4 class="text-center">
+                    The great ocean road
+                </h4>
+
+            </div>
+            <!-- Hover-Fall Effect-->
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/australia-3392453_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">
+                            Great Barrier Reef
+                        </h4>
+                        <p>he Great Barrier Reef is one of the seven wonders of the natural world, and pulling away from it, and viewing it from a greater distance, you can understand why.</p>
+
+                    </div>
+                </div><h4 class="text-center">
+                    Great Barrier Reef
+                </h4>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1 class="text-center text-muted" style="margin-top:20vh;color:black;font-family: 'Rancho', cursive;">England<img src="~/Content/England.jpg" /></h1>
+        <div class="row" style="margin-top:10vh">
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+
+                    <img src="~/Content/fish-1684828_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Fish and chips</h4>
+                        <p>Fish and chips is a hot dish of English origin consisting of fried fish in batter served with chips. </p>
+
+                    </div>
+                </div><h4 class="text-center">Fish and chips</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/bangers-2430853_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">
+                            Bangers and mash
+                        </h4>
+                        <p>Bangers and mash, also known as sausages and mash, is a traditional dish of Great Britain comprising sausages served with mashed potatoes. </p>
+
+                    </div>
+                </div><h4 class="text-center">
+                    Bangers and mash
+                </h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/otter-365370_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Otters</h4>
+                        <p>Otters are carnivorous mammals in the subfamily Lutrinae. The 13 extant otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates.</p>
+
+                    </div>
+                </div><h4 class="text-center">Otters</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/squirrel-2827760_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Red Squirrels</h4>
+                        <p>The red squirrel or Eurasian red squirrel (Sciurus vulgaris) is a species of tree squirrel in the genus Sciurus common throughout Eurasia.</p>
+
+                    </div>
+                </div><h4 class="text-center">Red Squirrels</h4>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/harbor-1081482_1280.png" />
+                    <div class="mask">
+                        <h4 class="text-center">Grey Seals</h4>
+                        <p>The Grey Seal is one of the rarest species of seal on Earth. Grey Seals are a member of the “true seals” family phocidae.</p>
+
+                    </div>
+                </div><h4 class="text-center">Grey Seals</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+
+                    <img src="~/Content/big-ben-1143631_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Big Ben</h4>
+                        <p>Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London and is usually extended to refer to both the clock and the clock tower.</p>
+
+                    </div>
+                </div><h4 class="text-center">Big Ben</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/harry-potter-4073867_1280.png" />
+                    <div class="mask">
+                        <h4 class="text-center">Harry Potter</h4>
+                        <p>Harry Potter is a series of fantasy novels written by British author J. K. Rowling. </p>
+
+                    </div>
+                </div><h4 class="text-center">
+                    Harry Potter
+                </h4>
+
+            </div>
+            <!-- Hover-Fall Effect-->
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+                    <img src="~/Content/london-eye-945511_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">London Eye</h4>
+                        <p>The London Eye is a cantilevered observation wheel on the South Bank of the River Thames in London.</p>
+
+                    </div>
+                </div><h4 class="text-center">London Eye</h4>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1 class="text-center text-muted" style="margin-top:20vh;color:black;font-family: 'Rancho', cursive;">
+            India
+
+            <img src="~/Content/Indiaflag.png" />
+        </h1>
+        <div class="row" style="margin-top:10vh">
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+
+
+                    <img src="~/Content/buddha-1550589_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Buddha</h4>
+                        <p>“Buddha” means “one who is awake.” The Buddha who lived 2,600 years ago was not a god. He was an ordinary person, named Siddhartha Gautama, whose profound insights inspired the world. </p>
+
+                    </div>
+                </div><h4 class="text-center">Buddha</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+                    <img src="~/Content/india-1034843_1280.jpg" />
+
+
+                    <div class="mask">
+                        <h4 class="text-center">
+                            Snake and music
+                        </h4>
+                        <p>
+                            Snake charming is the practice of appearing to hypnotize a snake by playing and waving around an instrument called a pungi.
+                        </p>
+
+                    </div>
+                </div><h4 class="text-center">
+                    Snake and music
+                </h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+
+                    <img src="~/Content/india-959646_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Elephant Statue</h4>
+                        <p>Elephants and Feng Shui–Elephants are often used in Feng Shui to energize certain areas of the home and for good luck. </p>
+
+                    </div>
+                </div><h4 class="text-center">Elephant Statue</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+
+                    <img src="~/Content/india-866692_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">
+                            Taj Mahal Agra
+                        </h4>
+                        <p>The Taj Mahal  is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. </p>
+
+                    </div>
+                </div><h4 class="text-center">Taj Mahal Agra</h4>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+
+                    <img src="~/Content/white-bengal-tiger-1139664_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">White Tiger</h4>
+                        <p>
+                            The white tiger or bleached tiger is a pigmentation variant of the Bengal tiger, which is reported in the wild from time to time in the Indian.
+                        </p>
+
+                    </div>
+                </div><h4 class="text-center">White Tiger</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+
+
+                    <img src="~/Content/camel-3178337_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Camel</h4>
+                        <p>A camel is an even-toed ungulate in the genus Camelus that bears distinctive fatty deposits known as "humps" on its back. Camels have long been domesticated and, as livestock, they provide food and textiles. </p>
+
+                    </div>
+                </div><h4 class="text-center">Camel</h4>
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+
+                    <img src="~/Content/annapurna-2376966_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">Himalayan</h4>
+                        <p>The Himalayas,form a mountain range in Asia. The range has many of the Earth's highest peaks, including the highest, Mount Everest. </p>
+
+                    </div>
+                </div><h4 class="text-center">
+                    Himalayan
+                </h4>
+
+            </div>
+            <!-- Hover-Fall Effect-->
+            <div class="col-xs-6 col-sm-3">
+                <div class="fall-item fall-effect">
+
+
+
+                    <img src="~/Content/food-2217013_1280.jpg" />
+                    <div class="mask">
+                        <h4 class="text-center">samosas</h4>
+                        <p>The samosa is made with all-purpose flour locally known as maida shell stuffed with some filling, generally a mixture of mashed boiled potato, onions, green peas, lentils, spices and green chili, or fruits.</p>
+
+                    </div>
+                </div><h4 class="text-center">samosas</h4>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <center><a href="~/Pop/LearningCenter" class="button" style="margin-top:10vh;margin-bottom:5vh">Learn More</a></center>
+
+</body>

@@ -1,0 +1,291 @@
+﻿body {
+    background: #fff;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/486365/bg-grass-textures.jpg");
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #000;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: 0 2px 0 #444;
+}
+
+input {
+    float: left;
+    padding: 20px;
+}
+
+input, button, select, textarea {
+    display: block;
+    padding: .5em .6em;
+    display: block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+h1.title {
+    color: #fff;
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    font-family: 'Merienda', cursive;
+}
+
+#inputBoxes {
+    float: left;
+    background: #fff;
+    padding: 10px;
+    position: relative;
+    z-index: 999;
+}
+
+.itemPics {
+}
+
+.gatoradePic {
+    cursor: pointer;
+    -ms-transform: rotate(89deg);
+    /* IE 9 */
+    -webkit-transform: rotate(89deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(89deg);
+    width: 70px;
+    position: relative;
+    left: 15%;
+    z-index: 999;
+    display:none;
+}
+
+.waterbottlePic {
+    cursor: pointer;
+    -ms-transform: rotate(141deg);
+    /* IE 9 */
+    -webkit-transform: rotate(141deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(141deg);
+    width: 65px;
+    position: relative;
+    left: 15%;
+    top: 70px;
+    z-index: 999;
+}
+
+.sodaspritePic {
+    cursor: pointer;
+    -ms-transform: rotate(89deg);
+    /* IE 9 */
+    -webkit-transform: rotate(89deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(89deg);
+    width: 91px;
+    position: relative;
+    left: 15%;
+    z-index: 999;
+}
+
+.poweradePic {
+    cursor: pointer;
+    -ms-transform: rotate(38deg);
+    /* IE 9 */
+    -webkit-transform: rotate(38deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(38deg);
+    width: 67px;
+    position: relative;
+    left: 15%;
+    top: 70px;
+    z-index: 999;
+}
+
+.sodasccolaPic {
+    cursor: pointer;
+    -ms-transform: rotate(89deg);
+    /* IE 9 */
+    -webkit-transform: rotate(89deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(89deg);
+    width: 91px;
+    position: relative;
+    left: 15%;
+    z-index: 999;
+}
+
+.sodasccolaPic2 {
+    cursor: pointer;
+    -ms-transform: rotate(89deg);
+    /* IE 9 */
+    -webkit-transform: rotate(89deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(89deg);
+    width: 91px;
+    position: relative;
+    left: 15%;
+    display: none;
+    z-index: 999;
+}
+
+.paperPic {
+    cursor: pointer;
+    -ms-transform: rotate(89deg);
+    /* IE 9 */
+    -webkit-transform: rotate(89deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(89deg);
+    width: 73px;
+    position: relative;
+    left: 15%;
+    top: 70px;
+    z-index: 999;
+}
+
+.doritosPic {
+    cursor: pointer;
+    -ms-transform: rotate(38deg);
+    /* IE 9 */
+    -webkit-transform: rotate(38deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(38deg);
+    width: 100px;
+    position: relative;
+    left: 15%;
+    display: none;
+    z-index: 999;
+}
+
+.styrofoamcontainersPic {
+    cursor: pointer;
+    width: 119px;
+    position: relative;
+    left: 15%;
+    top: 70px;
+    z-index: 999;
+}
+
+.bananaPic {
+    cursor: pointer;
+    -ms-transform: rotate(89deg);
+    /* IE 9 */
+    -webkit-transform: rotate(89deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(89deg);
+    width: 100px;
+    position: relative;
+    left: 15%;
+    z-index: 999;
+}
+
+.bins {
+    margin-top: 80px;
+    width: 100%;
+    height: 335px;
+    /* background-color: grey; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.recyclebinsPic {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/486365/recycle-bins.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1060px;
+    height: 403px;
+    position: relative;
+    left: 15%;
+    display: none;
+}
+
+.recyclable1 {
+    width: 212px;
+    height: 330px;
+    /* 	padding: 10px; */
+    margin: 0 5%;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/486365/recycle-yellow-metal.png);
+    background-repeat: no-repeat;
+    /*border: 1px solid #000;*/
+    /*background-color: yellow;*/
+    position: relative;
+    float: left;
+    /* 	top: 393px; */
+    /* 	left: 257px; */
+}
+
+.recyclable2 {
+    width: 212px;
+    height: 330px;
+    /* 	padding: 10px; */
+    margin: 0 5%;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/486365/recycle-green-solid.png);
+    background-repeat: no-repeat;
+    /*border: 1px solid #000;*/
+    /*background-color: green;*/
+    position: relative;
+    float: left;
+    /* 	top: 393px; */
+    /* 	left: 357px; */
+}
+
+.recyclable3 {
+    width: 212px;
+    height: 330px;
+    /* 	padding: 10px; */
+    margin: 0 5%;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/486365/recycle-blue-paper.png);
+    background-repeat: no-repeat;
+    /*border: 1px solid #000;*/
+    /*background-color: lightblue;*/
+    position: relative;
+    float: left;
+    /* 	top: 393px; */
+    /* 	left: 457px; */
+}
+
+.recyclable4 {
+    width: 212px;
+    height: 330px;
+    /* 	padding: 10px; */
+    margin: 0 5%;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/486365/recycle-red-plastic.png);
+    background-repeat: no-repeat;
+    /*border: 1px solid #000;*/
+    /*background-color: red;*/
+    position: relative;
+    float: left;
+    /* 	top: 393px; */
+    /* 	left: 557px; */
+}
+
+.correct {
+    /*background-color: orange;*/
+    display: none;
+}
+
+.wrong-title {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Merienda', cursive;
+}
+
+.correct-title {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Merienda', cursive;
+    color:white;
+}
+
+.draggable {
+}

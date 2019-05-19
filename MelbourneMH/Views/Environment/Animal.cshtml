@@ -1,0 +1,425 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Animal";
+}
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Lobster" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="~/Content/NARVIGATION.css" rel="stylesheet" />
+    <meta name="viewport" content="initial-scale=1.0">
+    <link href="~/Content/QuizCenter.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <link href="~/Content/popgame.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Merienda" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="~/Content/environmentcenter.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link href="~/Content/buttongo.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link href="~/Content/gallery.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
+</head>
+<body style="overflow-x:hidden">
+    <nav class="navbar navbar-default navbar-inverse" style="font-family: 'Merienda', cursive;background-color:#333">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Melbourne Myhome</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="~/Content/title.png" style="margin-top:2vh;margin-left:5vh" />
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav " style="margin-top:6px;margin-left:64px">
+                    <li><a href="~/Home/Home"><img src="~/Content/homeicon.png" />Home <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img src="~/Content/learningicon.png" />Learning <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Pop/LearningCenter"><i class="fa fa-book" aria-hidden="true"></i>Learning Center</a></li>
+                            <li><a href="~/Pop/PopOverview"><i class="fa fa-user" aria-hidden="true"></i>Population</a></li>
+                            <li><a href="~/Culture/CulOverview"><i class="fa fa-globe" aria-hidden="true"></i>Culture</a></li>
+
+                            <li><a href="~/Pop/Environment"><i class="fa fa-tree" aria-hidden="true"></i>Environment</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="~/Content/quizicon.png" />Quiz <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Quiz/QuizCenter"><i class="fa fa-file-text-o" aria-hidden="true"></i>Quiz Center</a></li>
+                            <li><a href="~/Quiz/QuizPop"><i class="fa fa-female" aria-hidden="true"></i>Population Quiz</a></li>
+                            <li><a href="~/Quiz/QuizCul"><i class="fa fa-flag" aria-hidden="true"></i>Culture Quiz</a></li>
+
+                            <li><a href="~/Quiz/QuizEnv"><i class="fa fa-bolt" aria-hidden="true"></i>Environment Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="~/Content/gameicon.png" />Game <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Game/GameCenter"><i class="fa fa-gamepad" aria-hidden="true"></i>Game Center</a></li>
+                            <li><a href="~/Game/MemoryGame"><i class="fa fa-github-alt" aria-hidden="true"></i>Memory Game</a></li>
+                            <li><a href="~/Game/Tangram"><i class="fa fa-hand-o-up" aria-hidden="true"></i>Tangram Game</a></li>
+                            <li><a href="~/Game/Capital"><i class="fa fa-check-square-o" aria-hidden="true"></i>Answer Game</a></li>
+                            <li><a href="~/Game/RecycleGame"><i class="fa fa-recycle" aria-hidden="true"></i>Recycle Game</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+        <center>
+            <h1 style="font-family: 'Merienda', cursive;">Environment Theme</h1>
+        </center>
+    </div>
+
+    <center>
+
+        <img src="~/Content/easter.png" />
+        <h2 style="font-family: 'Merienda', cursive;margin-top:10vh">Popular Animals around Australia</h2>
+        <p style="font-family: 'Merienda', cursive;">Click it to check the detail.</p>
+    </center>
+
+
+
+    <div class="wrapper">
+        <div class="wrapper_inner">
+            <!-- Gallery -->
+            <section class="gallery">
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="1">
+
+                            <span>
+
+                                <img src="~/Content/dingo-285516_1280.jpg" />
+                                <h2>No.1</h2><h3 style="font-family: 'Merienda', cursive;">Dingo</h3>
+                                <p>
+
+                                </p>
+
+                            </span>
+                        </a>
+
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="1" class="gallery_item_full">
+                        <div class="box">
+
+
+
+                            <h3 style="font-size:48px">Dingo</h3>
+                            <img src="~/Content/dingo1.jpg" />
+
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Canis lupus dingo</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Mass:&nbsp;13–20kg</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Height:&nbsp;52–60cm</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">
+                                Class:&nbsp;
+                                Mammalia
+                            </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Order:&nbsp;Carnivora</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="2">
+                            <span>
+
+
+                                <img src="~/Content/echidna-3288632_1280.jpg" />
+                                <h2>No.2</h2><h3 style="font-family: 'Merienda', cursive;">Echidna</h3>
+                                <p>
+
+                                </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="2" class="gallery_item_full">
+                        <div class="box">
+
+
+
+                            <h3 style="font-size:48px">Echidna</h3>
+                            <img src="~/Content/echidna1.jpg" />
+
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Tachyglossidae</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Mass:&nbsp;Short-beaked echidna:3.5 kg,Western long-beaked echidna: 9 kg</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Length: &nbsp;Short-beaked echidna:30–45 cm,Western long-beaked echidna:45–77cm</h3><br />
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="3">
+                            <span>
+
+                                <img src="~/Content/emu-165079_1280.jpg" />
+                                <h2>No.3</h2><h3 style="font-family: 'Merienda', cursive;">Emu</h3>
+                                <p>
+                                </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="3" class="gallery_item_full">
+                        <div class="box">
+
+
+                            <h3 style="font-size:48px">Emu</h3>
+                            <img src="~/Content/emu1.jpg" />
+
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Dromaius novaehollandiae</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Mass:&nbsp;36–40kg</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Conservation status:&nbsp;Least Concern </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">
+                                Family:&nbsp;
+                                Casuariidae
+                            </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Introduction:&nbsp;The emu is the second-largest living bird by height, after its ratite relative, the ostrich. </h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="4">
+                            <span>
+
+                                <img src="~/Content/walibi-4124637_1280.jpg" />
+
+                                <h2>No.4</h2><h3 style="font-family: 'Merienda', cursive;">Kangaroo</h3>
+                                <p>
+                                </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="4" class="gallery_item_full">
+                        <div class="box">
+
+
+                            <h3 style="font-size:48px">Kangaroo</h3>
+                            <img src="~/Content/kangaroo1.jpg" />
+
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Family:&nbsp; Macropodidae</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Mass:&nbsp;Red kangaroo:28kg,Eastern grey kangaroo:41 kg</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Length:&nbsp;88 cm</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">
+                                Class:&nbsp;
+                                Chordata
+                            </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Gestation period:&nbsp; 34days</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="5">
+
+
+                            <img src="~/Content/koala.jpg" />
+                            <span>
+                                <h2>No.5</h2><h3 style="font-family: 'Merienda', cursive;">Koala</h3>
+                                <p>
+                                </p>
+
+                            </span>
+                        </a>
+
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="5" class="gallery_item_full">
+                        <div class="box">
+                            <h3 style="font-size:48px">Koala</h3>
+                            <img src="~/Content/koala1.jpg" />
+
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Scientific Name:&nbsp; Phascolarctos cinereus</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Mass:&nbsp;4–15 kg </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Lifespan:&nbsp;13–18 years </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">
+                                Trophic level:&nbsp;
+                                Herbivorous
+                            </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Gestation period:&nbsp;30-36days</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="6">
+                            <span>
+
+
+                                <img src="~/Content/1024px-Feeding_Platypus_(6811147158).jpg" />
+                                <h2>No.6</h2><h3 style="font-family: 'Merienda', cursive;">Platypus</h3>
+                                <p>
+                                </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="6" class="gallery_item_full">
+                        <div class="box">
+
+                            <h3 style="font-size:48px">Platypus</h3>
+                            <img src="~/Content/platypus1.jpg" />
+
+
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Ornithorhynchus anatinus</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Mass:&nbsp; Male:1–2.4 kg,Female:0.7–1.6 kg </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Lifespan:&nbsp;17years  </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">
+                                Trophic level:&nbsp;
+                                Carnivorous
+                            </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Length:&nbsp;Male:50cm(Adult),Female:43cm(Adult)</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="7">
+                            <span>
+
+
+                                <img src="~/Content/14987720744_37b3d63da6_k.jpg" />
+                                <h2>No.7</h2><h3 style="font-family: 'Merienda', cursive;">Quokka</h3>
+                                <p>
+                                </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="7" class="gallery_item_full">
+                        <div class="box">
+
+                            <h3 style="font-size:48px">Quokka</h3>
+                            <img src="~/Content/quokka1.jpg" />
+
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Setonix brachyurus</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Mass:&nbsp;3kg </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Trophic level:&nbsp;Herbivorous </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">
+                                Conservation status:&nbsp;
+                                Vulnerable(Population decreasing)
+                            </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Order:&nbsp;Diprotodontia</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Gallery  item -->
+                <div class="gallery_item">
+                    <!-- Gallery  item preview -->
+                    <span class="gallery_item_preview">
+                        <a href="#" data-js="8">
+                            <span>
+
+                                <img src="~/Content/wombat-687524_1280.jpg" />
+                                <h2>No.8</h2><h3 style="font-family: 'Merienda', cursive;">Wombat</h3>
+                                <p>
+                                </p>
+
+                            </span>
+                        </a>
+                    </span>
+                    <!-- Gallery  item full -->
+                    <div data-lk="8" class="gallery_item_full">
+                        <div class="box">
+
+                            <h3 style="font-size:48px">Wombat</h3>
+                            <img src="~/Content/wombat1.jpg" />
+
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Scientific Name:&nbsp;Vombatidae</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Mass:&nbsp;20–35kg </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Speed:&nbsp;40km/h</h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">
+                                Family:&nbsp;
+                                Vombatidae;Burnett,1829
+                            </h3><br />
+                            <h3 style="color:#f79447;font-family: 'Merienda', cursive;">Gestation period:&nbsp;20–21days</h3><br />
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <!-- Gallery  item -->
+
+            </section>
+        </div>
+        <a href="~/Environment/Bird" class="button" style="float:left;margin-top:10vh">Previous</a>
+        <a href="~/Temperature/Temperature" class="button" style="float:right;margin-right:30vh;margin-top:10vh">Next</a>
+    </div>
+
+
+   
+
+
+    <script src="~/Scripts/gallery.js"></script>
+</body>

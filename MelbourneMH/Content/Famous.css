@@ -1,0 +1,119 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Patrick+Hand|Roboto:400,700);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    padding: 3em;
+    
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    margin: 1em 0;
+    font-size: 3em;
+    text-align: center;
+    color: #eee;
+    text-shadow: -3px 3px 0px #333;
+}
+
+blockquote {
+    position: relative;
+    padding: 1.5em;
+    margin: 0 auto 1em;
+    width: 75%;
+    background-color: #ead520;
+    border: 2px solid #96880e;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    font: 1.5em "Patrick Hand", cursive;
+    line-height: 1.33em;
+    -moz-box-shadow: -5px 5px 0px #333;
+    -webkit-box-shadow: -5px 5px 0px #333;
+    box-shadow: -5px 5px 0px #333;
+}
+
+    blockquote cite {
+        display: block;
+        margin-top: 0.5em;
+        text-align: right;
+        font-size: 0.75em;
+    }
+
+        blockquote cite:before {
+            content: "- ";
+        }
+
+button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    top: -1em;
+    right: -1em;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font: 1em "Roboto", sans-serif;
+    padding: 0.5em 0.75em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #b3b3b3;
+    border-bottom: 2px solid #777777;
+}
+
+    button:before {
+        content: "\f021";
+        font-family: 'FontAwesome';
+    }
+
+    button:active, button:focus {
+        outline: none;
+    }
+
+    button:active, button:hover {
+        -moz-animation: spin 1s;
+        -webkit-animation: spin 1s;
+        animation: spin 1s;
+    }
+
+

@@ -1,0 +1,34 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Staatliches");
+
+body {
+    font-family: 'Staatliches', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #444;
+}
+
+    body header {
+        
+    }
+
+    body main {
+      
+    }
+
+    body footer {
+       
+    }
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
